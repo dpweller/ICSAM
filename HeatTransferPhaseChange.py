@@ -1,6 +1,3 @@
-from __future__ import division, print_function
-from vpython import *
-
 def ShrinkSolidGrowLiquid():#This subroutine changes the sizes of the solid and liquid phases during melting
     solid.pos=solid.pos+vec(0,-(L_box/(2*ceil(m*Hfus/dE))),0) #SizeIncrement1=L_box/(2*ceil(m*Hfus/dE))
     solid.radius=solid.radius-(L_box/(2*ceil(m*Hfus/dE)))
